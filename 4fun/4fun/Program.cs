@@ -100,11 +100,19 @@ namespace _4fun
 
         static void ShowHud()
         {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.BackgroundColor = ConsoleColor.Black;
             Console.WriteLine();
+            Console.WriteLine("==============================");
             Console.WriteLine(gamename + " | " + name);
             Console.WriteLine("==============================");
-            Console.WriteLine("HP: " + health + " | Score: " + score + " | Lives: " + lives);
+            Console.WriteLine("HP: " + health + " | Score: " + score + " | Lives: " + lives );
+            Console.WriteLine("==============================");
+            Console.WriteLine("PRESS ANY KEY TO CONTINUE     ");
+            Console.WriteLine("==============================");
             Console.WriteLine();
+            Console.BackgroundColor = ConsoleColor.DarkRed;
+            Console.ForegroundColor = ConsoleColor.Black;
         }
 
     }
