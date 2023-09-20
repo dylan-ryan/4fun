@@ -22,33 +22,49 @@ namespace _4fun
             score = 0;
 
             ShowHud();
+            Console.ReadKey(true);
 
             Console.WriteLine("Shot by a bow");
             Console.WriteLine();
+            Console.ReadKey(true);
             HealthTaken(10);
+            Console.ReadKey(true);
 
             ShowHud();
+            Console.ReadKey(true);
 
             Console.WriteLine("Killed Bowman");
+            Console.ReadKey(true);
             Console.WriteLine("Drank His Health Potion");
             Console.WriteLine();
+            Console.ReadKey(true);
             HealthGained(10);
+            Console.ReadKey(true);
             AddScore(10, 1);
+            Console.ReadKey(true);
 
             ShowHud();
+            Console.ReadKey(true);
 
             Console.WriteLine("Bowmans 3 Friends Kill You");
             Console.WriteLine();
+            Console.ReadKey(true);
             LoseLife(1);
+            Console.ReadKey(true);
 
             ShowHud();
+            Console.ReadKey(true);
 
             Console.WriteLine("Kill Bowmans 3 Friends After Reviving");
             Console.WriteLine();
+            Console.ReadKey(true);
             AddScore(10, 3);
+            Console.ReadKey(true);
 
             ShowHud();
-            
+            Console.ReadKey(true);
+
+            Console.WriteLine("THE END");
             Console.ReadKey(true);
         }
 
@@ -63,6 +79,7 @@ namespace _4fun
             lives = lives + rez;
             Console.WriteLine("Gain = " + rez + " Life");
         }
+
         static void HealthTaken(int damage)
         {
             health = health - damage;
@@ -74,6 +91,7 @@ namespace _4fun
             health = health + heal;
             Console.WriteLine("Gain = " + heal + " Health");
         }
+
          static void AddScore(int pointsEarned, int scoreMulti)
         {
             score = score + pointsEarned * scoreMulti;
@@ -85,7 +103,7 @@ namespace _4fun
             Console.WriteLine();
             Console.WriteLine(gamename + " | " + name);
             Console.WriteLine("==============================");
-            Console.WriteLine(" HP: " + health + " | Score: " + score + " | Lives: " + lives);
+            Console.WriteLine("HP: " + health + " | Score: " + score + " | Lives: " + lives);
             Console.WriteLine();
         }
 
